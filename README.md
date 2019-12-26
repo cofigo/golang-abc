@@ -52,4 +52,6 @@ Go 语言是谷歌2009年发布的第二款开源编程语言（系统开发语�
 
 参考资料：
 
-  - 
+- [《The Go Programming Language》](http://gopl.io/)
+- [《Go语言圣经》](https://www.ctolib.com/docs/sfile/gopl-zh-github-com-master/index.html)：项目地址（[http://github.com/golang-china/gopl-zh](http://github.com/golang-china/gopl-zh)）
+
