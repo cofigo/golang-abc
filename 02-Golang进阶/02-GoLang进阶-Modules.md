@@ -165,3 +165,8 @@ $ go build -mod=readonly
 - https://www.youtube.com/watch?v=F8nrpe0XWRg&list=PLq2Nv-Sh8EbbIjQgDzapOFeVfv5bGOoPE&index=3&t=0s
 - ChenJiehua的[《Golang Modules 笔记》](https://chenjiehua.me/golang/go-modules-intro.html)
 
+
+
+----
+
+本文原始来源 [Endial Fang](https://github.com/endial) @ [Github.com](https://github.com) ([项目地址](https://github.com/endial/study-golang.git))

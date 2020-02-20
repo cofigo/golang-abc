@@ -386,3 +386,8 @@ G0 1.10
 - *https://medium.com/learning-the-go-programming-language/writing-modular-go-programs-with-plugins-ec46381ee1a9*
 - ChenJiehua的[《Golang的构建模式》](https://chenjiehua.me/golang/golang-buildmode.html)
 
+
+
+----
+
+本文原始来源 [Endial Fang](https://github.com/endial) @ [Github.com](https://github.com) ([项目地址](https://github.com/endial/study-golang.git))
