@@ -27,7 +27,7 @@ go get golang.org/x/sys: unrecognized import path "golang.org/x/sys" (https fetc
 
 
 
-如果需要启用，至需要设置环境变量`GOPROXY`即可以，类似如下：
+如果需要启用，只需要设置环境变量`GOPROXY`即可以，类似如下：
 
 ```
 export GOPROXY=https://goproxy.io
@@ -113,3 +113,9 @@ replace (
 ```
 
 > `go.mod`文件应当位于项目根目录。
+
+
+
+----
+
+本文原始来源 [Endial Fang](https://github.com/endial) @ [Github.com](https://github.com) ([项目地址](https://github.com/endial/study-golang.git))
