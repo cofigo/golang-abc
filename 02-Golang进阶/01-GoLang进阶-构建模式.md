@@ -31,7 +31,7 @@ Golang的构建模式（buildmode）指的是编译器如何编译源码构建�
 
 > *Build the listed main package, plus all packages it imports, into a C archive file. The only callable symbols will be those functions exported using a cgo //export comment. Requires exactly one main package to be listed.*
 
-c-archive 也就是将 package main 中导出的方法（// export 标记）编译成 .a 文件，这样其它 c 程序就可以静态链接该文件，并调用其中的方法。
+c-archive 也就是将package main 中导出的方法（// export 标记）编译成 .a 文件，这样其它 c 程序就可以静态链接该文件，并调用其中的方法。
 
 
 
@@ -47,12 +47,17 @@ import "C"
 
 func main(){} 
 
-//export 
-Addfunc Add(a, b int) int{
+//export Add
+func Add(a, b int) int{
   fmt.Printf("%d + %d = %d\n", a, b, a+ b)
   return a+b
 }
 ```
+
+
+
+> - 需要输出给外部使用的函数，添加`//export xxxx`说明
+> - 需要一个main package，包含一个空的`main()`函数
 
 
 
@@ -128,8 +133,7 @@ $ ./a.out
 
 ### 说明：
 
-> *Build the listed main package, plus all packages it imports, into a C shared library. The only callable symbols will
-> be those functions exported using a cgo //export comment. Requires exactly one main package to be listed.*
+> *Build the listed main package, plus all packages it imports, into a C shared library. The only callable symbols will be those functions exported using a cgo //export comment. Requires exactly one main package to be listed.*
 
 c-shared 也就是将 package main 中导出的方法（// export 标记）编译成一个动态链接库（.so 或 .dll 文件），这样其它 c 程序就可以调用其中的方法。
 
